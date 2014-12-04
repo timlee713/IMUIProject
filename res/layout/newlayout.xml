@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#ffffffff"
+  android:minWidth="280dp"
+  android:orientation="vertical" >
+
+  <TextView
+    android:id="@+id/tvAlertDialogTitle"
+    android:textSize="18sp"
+    android:layout_width="wrap_content"
+    android:textColor="#FF000000"
+    android:text="设置备注名称"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:gravity="center" />
+  
+
+  <EditText
+    android:id="@+id/etMarknameSetting"
+    android:layout_width="fill_parent"
+    android:layout_height="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:hint="请输入备注名称"
+    android:textSize="16sp"
+    android:textColorHint="#ffb3b3b3"
+    android:layout_gravity="center_vertical" 
+    android:background="@drawable/bg_edittext"/>
+  
+
+
+  <TextView
+    android:id="@+id/tvAlertDialogMessage"
+    android:layout_width="match_parent"
+    android:textSize="16sp"
+    android:layout_height="50dp"		
+    android:visibility="gone" />
+
+  <View
+    android:id="@+id/vMessageLine"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#ff000000"
+    android:visibility="gone" >
+  </View>
+
+  <LinearLayout
+    android:id="@+id/rlAlertDialogButtons"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center" >
+
+    <Button
+      android:id="@+id/btnAlertDialogNegative"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:textColor="#FFFFFF"
+      android:text="取消"
+      android:textSize="16sp"
+      android:background="#FF39B356"
+      android:gravity="center"
+      android:layout_weight=".50"/>
+
+    <Button
+      android:id="@+id/btnAlertDialogPositive"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:textColor="#FFFFFF"
+      android:background="#FF2D72B3"
+      android:gravity="center"
+      android:text="确定"
+      android:textSize="16sp"
+      android:layout_weight=".50"/>
+  </LinearLayout>
+
+</LinearLayout>
